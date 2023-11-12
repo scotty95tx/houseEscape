@@ -1,0 +1,85 @@
+body {
+    font-family: 'ArcadeClassic', sans-serif; 
+    background-image: url("darkhouse.jpg");
+    background-size: cover;                                       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  h1.header {
+    text-align: center;
+    color: #fff;
+  }
+
+  th,
+  td {
+    border: 1px solid #777;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 2s;
+  }
+
+  td.wall {
+    background-image: url(darkbricks.jpg);
+    background-size: cover;
+    
+  }
+
+  td.openPath {
+    background-image: url(darkfloor.jpg);
+    
+  }
+
+  td.visited {
+    background-color: #05A9B7;
+    transition: background-color 2s;
+  }
+
+  td.exit {
+    background-image: url(door.jpg);
+    background-size: cover;
+  }
+
+  td {
+    cursor: pointer;
+    transition: background-color 2s;
+  }
+
+  td:hover {
+    background-color: #ddd;
+  }
+
+  button {
+    font-family: 'ArcadeClassic', sans-serif;  
+    display: block;
+    margin: 20px auto;
+    background-color: gray;
+    color: #fff;
+    border: 5px solid black;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: gray;
+    background-color: black;
+  }
